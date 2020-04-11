@@ -4,7 +4,7 @@
 
 ### SPECS
 
-+ OS: macOS Mojave 10.15.4 x86_64 / (SMBIOS: iMac19,1)
++ OS: macOS Catalina 10.15.4 x86_64 / (SMBIOS: iMac19,1)
 + OpenCore: 0.5.7
 + CPU: Intel i5-8500 (6c6t) @ 3.0GHz
 + GPU: Intel UHD Graphics 630
@@ -18,7 +18,7 @@
 
 ### Wi-Fi Card
 
-My Wi-Fi card is BCM94360CS2, you need to by a NGFF card like this one. WD SN550 NVMe SSD don't have any nand in the back, so it's very nice to have.
+My Wi-Fi card is BCM94360CS2, you need to by a NGFF card like this one. WD SN550 PCIe NVMe SSD don't have any nand in the back, so it's very nice to have.
 
 ![BCM94360CS2](apps/BCM94360CS2.png)
 ![NGFF](apps/ngff.png)
@@ -34,9 +34,13 @@ My Wi-Fi card is BCM94360CS2, you need to by a NGFF card like this one. WD SN550
 + Super IO Configuration -> Serial Port: Disabled
 + BOOT > CSM: Enabled
 
-### HDMI ISSUES
+### HOW TO INSTALL
 
-+ If your hackintosh wake from sleep without signal, you need add `igfxonln=1` to your boot-args
++ Create bootable USB(https://support.apple.com/en-us/HT201372)
+    ```
+    sudo /Applications/Install\ macOS\ Catalina.app/Contents/Resources/createinstallmedia --volume /Volumes/MyVolume
+    ```
++ Mount EFI partition and PUT EFI folder to it
 
 ### FCPX
 
