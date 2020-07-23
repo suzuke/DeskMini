@@ -4,8 +4,8 @@
 
 ### SPECS
 
-+ OS: macOS Catalina 10.15.4 x86_64 / (SMBIOS: iMac19,1)
-+ OpenCore: 0.5.7
++ OS: macOS Catalina 10.15.6 x86_64 / (SMBIOS: iMac19,1)
++ OpenCore: 0.5.9
 + CPU: Intel i5-8500 (6c6t) @ 3.0GHz
 + GPU: Intel UHD Graphics 630
 + Wi-Fi: BCM94360CS2

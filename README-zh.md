@@ -4,14 +4,14 @@
 
 ### 系统信息
 
-+ 操作系统版本: macOS Mojave 10.14.6 18G4032 x86_64 / (SMBIOS: iMac19,1) - 理论上支持Catalina
-+ OC版本: 0.5.7
-+ CPU: Intel i5-9400 (6c6t) @ 2.90GHz
++ 操作系统版本: macOS Catalina 10.15.6 x86_64 / (SMBIOS: iMac19,1)
++ OC版本: 0.5.9
++ CPU: Intel i5-8500 (6c6t) @ 3.0GHz
 + GPU: Intel UHD Graphics 630
 + 无线网卡: BCM94360CS2
-+ SSD: 512GB [TOSHIBA RC500 NVMe](https://union-click.jd.com/jdc?e=&p=AyIGZRprFQMTBlQeUxMEGwFdKx9KWkxYZUIeUENQDEsFA1BWThgJBABAHUBZCQUdRUFGGRJDD1MdQlUQQwVKDFRXFk8jQA4SBlQaWhAKFAFcHVMlVHdgM2koUgd3UTdBP3ZiZHoLGg0TYh4LZRprFQMTB1MeXxwGEjdlG1wlVHwHVBpaFAMTBVYSaxQyEgNcHlsdARYAURxYFzIVB1wrWxwBFQRWHV8VBhFpFCtrJQEiN2UbaxYyUGkHTAkdUBYHARhfRlIXUlBMC0AKRg9cE1oVVhUEB0kLQTIQBlQfUg%3D%3D)
-+ RAM: 8GB x 2 [ADATA DDR4 2400](https://union-click.jd.com/jdc?e=&p=AyIGZRteEgYSAVEcWRQyEARSGV0RAxAFVR5rUV1KWQorAlBHU0VeBUVNR0ZbSkdETlcNVQtHRVNSUVNLXANBRA1XB14DS10cQQVYD21XHgVWHFkTBhMFVxteJUZOXRUcBEFXcl8NXxNSHBsHMEIPUnIeC2UaaxUDEwdTHl8cBhI3ZRtcJUN8B1QaWBEEEwFlGmsVBhUOVBhYFQoRAF0SaxICGzdVElgSAREBURtfFmxTN2UrWCUyIgdlGGtXbEdXBh5fQgEaAlJLDBAEFQ9cGAlFBkEPVUsMFQFCAldLaxcDEwNc)
-+ 显示器: [DELL U2518D](https://union-click.jd.com/jdc?e=&p=AyIGZRtaHAAaAFUdWh0yEQZdHVoTAhsCVRhrUV1KWQorAlBHU0VeBUVNR0ZbSkdETlcNVQtHRVNSUVNLXANBRA1XB14DS10cQQVYD21XHgRUE10UBBIOUBtYJV1KRgVPGRwHcEQraAlXQE9%2FIWs9ZmIeC2UaaxUDEwdTHl8cBhI3ZRtcJUN8AVYfWhIFIgZlG18TABIPVRpTEAsQBWUcWxwyEg5WHFgWBBYHURg1VDIiN1YrayUCIgRlWTVHVxQDB0lTHAMUDlYeUhECG1IGGAkcARZTVR1dHQcSAmUZWhQGGw%3D%3D)
++ SSD:  [WD SN550 1TB](https://shop.westerndigital.com/zh-tw/products/internal-drives/wd-blue-sn550-nvme-ssd#WDS100T2B0C)
++ RAM: 16GB x 1 [Micron Crucial DDR4 2666]
++ Monitor: [BenQ VZ2350]
 
 ### TELEGRAM
 [Join Telegram](https://t.me/asrock_deskmini)
@@ -34,10 +34,6 @@
 + Super IO Configuration -> Serial Port: Disabled
 + BOOT > CSM: Enabled
 
-### HMDI问题
-
-+ 睡眠唤醒之后如果没有信号的话，可以把 `igfxonln=1` 放到 boot-args试试。
-
 
 ### FCPX
 
@@ -46,3 +42,4 @@
 ### CREDITS
 
 + [xjn819 blog](https://blog.xjn819.com/?p=7)
++ [csrutil github](https://github.com/csrutil/DeskMini)
