@@ -1,30 +1,34 @@
-// Necessary hotpatch, pair with `Rename Method(GPRW,2,N) to XPRW` rename patch
-// Maintained by: Rehabman
-// Reference: https://github.com/RehabMan/OS-X-Clover-Laptop-Config/blob/master/hotpatch/SSDT-GPRW.dsl by Rehabman
-// For solving instant wake by hooking GPRW
-
-DefinitionBlock ("", "SSDT", 2, "hack", "_GPRW", 0x00000000)
+//
+// In config ACPI, GPRW to XPRW
+// Find:     47505257 02
+// Replace:  58505257 02
+//
+DefinitionBlock ("", "SSDT", 2, "OCLT", "GPRW", 0)
 {
-    External (XPRW, MethodObj)    // 2 Arguments
-
+    External(XPRW, MethodObj)
     Method (GPRW, 2, NotSerialized)
     {
         If (_OSI ("Darwin"))
         {
             If ((0x6D == Arg0))
             {
-                Return (Package (0x02)
+                Return (Package ()
                 {
                     0x6D, 
                     Zero
                 })
             }
 
-            Return (XPRW (Arg0, Arg1))
+            If ((0x0D == Arg0))
+            {
+                Return (Package ()
+                {
+                    0x0D, 
+                    Zero
+                })
+            }
         }
-        Else
-        {
-            Return (XPRW (Arg0, Arg1))
-        }
+        Return (XPRW (Arg0, Arg1))
     }
 }
+
