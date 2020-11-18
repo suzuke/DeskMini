@@ -5,7 +5,7 @@
 ### 系统信息
 
 + 操作系统版本: macOS Catalina 10.15.6 x86_64 / (SMBIOS: iMac19,1)
-+ OC版本: 0.6.0
++ OC版本: 0.6.3
 + CPU: Intel i5-8500 (6c6t) @ 3.0GHz
 + GPU: Intel UHD Graphics 630
 + 无线网卡: BCM94360CS2
